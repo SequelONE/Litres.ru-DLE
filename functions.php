@@ -5,7 +5,7 @@
 	
 	function collect_stats(){
 
-		global $table_prefix, $partner_id, $partner_domain, $partner_contact, $partner_pass;
+		global $mysqli, $table_prefix, $partner_id, $partner_domain, $partner_contact, $partner_pass;
 		
 		$data = array();
 		
@@ -123,6 +123,7 @@
 	}
 	
 	function delete_litres_book($hub_id){
+	    global $mysqli;
 		//удаляем книги путем простановки options=0
 		$q = "UPDATE `litres_data` SET options=0 WHERE hub_id=" . $hub_id;
 		$mysqli->query($q);
@@ -132,7 +133,7 @@
 		//функция нужна для правильного полнотекстого индексирования.
 		//используется если клиентские данные в кодировке 1251
 
-		global $table_prefix;
+		global $mysqli, $table_prefix;
 		
 		//$q = "TRUNCATE TABLE litres_local_data";
 		//$mysqli->query($q);
@@ -210,7 +211,7 @@
 	
 	function compare_local_global($book_type = 0){
 
-		global $partner_id, $table_prefix;
+		global $mysqli, $partner_id, $table_prefix;
 
 		include('dictionary.php');
 		
@@ -398,7 +399,7 @@
 	function compare_local_global_by_sequnces($book_type = 0){
 		//проверка по фамилии автора и названию серии
 		
-		global $partner_id, $table_prefix;
+		global $mysqli, $partner_id, $table_prefix;
 
 		include('dictionary.php');
 		
@@ -535,7 +536,7 @@
 	
 	function compare_local_global_by_collections($book_type = 0){
 
-		global $partner_id, $table_prefix;
+		global $mysqli, $partner_id, $table_prefix;
 		
 		//находим максимальный Id в `litres_local_data` чтобы проверять только хвост
 		$q = "SELECT MAX(id) AS max_id FROM `litres_local_data`";
@@ -656,7 +657,7 @@
 	
 	function compare_local_global_magazines(){
 
-		global $partner_id, $table_prefix;
+		global $mysqli, $partner_id, $table_prefix;
 		
 		//массив журналов, составляется вручную
 		$magazines = array(
