@@ -26,3 +26,4 @@ php import_litres_data.php
 ```
 php litres_books.php
 ```
+P.S. Скачать базу можно здесь https://drive.google.com/drive/u/0/folders/0B3zOoAR4NvuKfkdDRmFFY2F4ZTRWS1l2QWs5RkpaWmpVVXMtVmNuUzJPUk8xWWZ6Sk5hTVE
