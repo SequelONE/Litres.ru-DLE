@@ -6,9 +6,9 @@
 	
 	//$exclude_genres = array('prose_rus_classic','prose_su_classics','antique_ant','antique_east','antique_russian','antique_european','foreign_antique','literature_18','literature_19','antique_myths','antique');
 	
-	include("functions.php");
 	include("config.php");
 	include("config_litres.php");
+	include("functions.php");
 
 	//перебираем все типы материалов, которые нужно импортировать
 	//0-книги, 1-аудиокниги, 4 - pdf-книги, 11 - книги на английском, 12 - бумажные книги

@@ -1,5 +1,5 @@
 <?php
-	
+
 	//ставим 1251 локаль т.к. внешние csv в 1251
 	@setlocale(LC_ALL, array("Russian_Russia.1251","ru_RU.CP1251","ru_RU.cp1251","ru_RU","RU","rus_RUS.1251"));
 	
