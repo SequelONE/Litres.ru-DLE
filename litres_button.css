@@ -1,0 +1,21 @@
+/*litres button*/
+.coolbtn{position:relative;padding:0 10px;text-decoration:none;display:inline-block;font-size:13px;text-align:center;white-space:nowrap;}
+
+a.coolbtn{cursor:pointer;}
+a.coolbtn{text-decoration:none;}
+
+.coolbtn {display:inline-block;/*height:32px;*/line-height:32px;background-image:url("../images/btn.png");background-position:-5px -118px;}
+
+.coolbtn:hover{background-position:-5px -177px;}
+
+.btn-green-22{padding:0 25px;}
+.btn-green-22{background-position:right 0;background-color:#007001;color:#fff !important;}
+.btn-green-22 s{background-position:right 0;}
+.btn-green-22 u{background-position:left 0;}
+.btn-green-22:hover{background-position:-5px -59px;color:#fff;text-decoration:none}
+.btn-green-22:hover u{background-position:left -59px;}
+.btn-green-22:hover s{background-position:right -59px;}
+.btn-green-22{font-size:13px;color:#fff;text-shadow:1px 1px 1px #003F01;filter:dropshadow(color=#003F01, offx=1, offy=1);}
+.btn-green-22:visited{color:#fff !important;}
+
+.coolbtn{max-width:400px;}

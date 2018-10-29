@@ -1,0 +1,43 @@
+<div id="litres_button_desktop" style="text-align:center;margin:10px">
+				<a rel="nofollow" class="coolbtn btn-green-22" href="[xfvalue_litres_link]" target="_blank"> упить и скачать книгу</a>
+			</div>
+			
+			<script type="text/javascript">
+				function detectmob(){
+					if( navigator.userAgent.match(/Android/i)
+						|| navigator.userAgent.match(/iPhone/i)
+						|| navigator.userAgent.match(/iPad/i)
+						|| navigator.userAgent.match(/iPod/i)
+						|| navigator.userAgent.match(/Opera Mini/i)
+					){
+						return true;
+					}
+					else{
+						return false;
+					}
+				}
+
+				mobileDevice = detectmob();
+
+				if (mobileDevice){
+					//элекронна€ книга
+					[not-catlist=56,57,58,67]
+					document.write('<a rel="nofollow" class="coolbtn btn-green-22" href="https://litres.onelink.me/1566260005/?pid=partner.domain_DL&af_dp=litresread%3A%2F%2Fcontent%2Fb%2F[xfvalue_litres_hub_id]%2Fref%2F[lfrom]&af_force_dp=true" target="_blank">„итать в приложении</a>');
+					[/not-catlist]
+					
+					//аудиокнига
+					[catlist=56,57,58,67]
+						document.write('<a rel="nofollow" class="coolbtn btn-green-22" href="https://litres.onelink.me/1786640714/?pid=partner.domain_DL&af_dp=litresaudio%3A%2F%2Fcontent%2Fb%2F[xfvalue_litres_hub_id]%2Fref%2F[lfrom]&af_force_dp=true" target="_blank">—лушать в приложении</a>');
+					[/catlist]
+					
+					//если мобильный юзер, то пр€чем стандартную литресную ссылку
+					document.getElementById('litres_button_desktop').style.display = 'none';
+				}
+				else{
+					
+				}
+			</script>
+			
+			
+			
+* в некоторых версиях дле надо использовать [category=*] вместо [catlist=*]
